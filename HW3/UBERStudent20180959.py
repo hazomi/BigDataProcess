@@ -13,7 +13,7 @@ for line in f:
     week = new_result[1].split("/")
     wk = [int(i) for i in week]
     d = days[datetime.date(wk[2], wk[0], wk[1]).weekday()]
-    print(new_result[0], d, sep = ",", end=" ")
+    print(new_result[0], d, sep = ",", end="    ")
     print(new_result[2], new_result[3], sep = ",")
 f.close()
 sys.stdout.close()
